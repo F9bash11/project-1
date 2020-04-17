@@ -20,7 +20,7 @@ namespace project_1
 
         private void FrmRandom_Load(object sender, EventArgs e)
         {
-            BackColor = Color.FromArgb(10, 125, 135);
+            
         }
 
         private void BtnRandomNum_Click(object sender, EventArgs e)
@@ -36,6 +36,7 @@ namespace project_1
 
             label1.Text = Convert.ToString(r) + "-" + Convert.ToString(g) + "-" + Convert.ToString(b);
             BtnGenerateRandomColor.BackColor = Color.FromArgb(r, g, b);
+            this.BackColor = Color.FromArgb(255 - r, 255 - g, 255 - b);
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
