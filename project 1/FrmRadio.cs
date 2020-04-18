@@ -24,34 +24,22 @@ namespace project_1
 
         private void RdoRed2_CheckedChanged(object sender, EventArgs e)
         {
-            if (RdoRed2.Checked == true)
-                RdoRed2.ForeColor = Color.FromArgb(255, 0, 0);
-            else
-                RdoRed2.ForeColor = Color.FromArgb(0, 0, 0);
+            RdoRed2.ForeColor = Color.FromName("red");  // http://www.flounder.com/csharp_color_table.htm
         }
 
         private void RdoGreen2_CheckedChanged(object sender, EventArgs e)
         {
-            if (RdoGreen2.Checked == true)
-                RdoGreen2.ForeColor = Color.FromName("green"); // http://www.flounder.com/csharp_color_table.htm
-            else
-                RdoGreen2.ForeColor = Color.FromName("black");
+            RdoGreen2.ForeColor = Color.FromName("green");
         }
 
         private void RdoBlue2_CheckedChanged(object sender, EventArgs e)
         {
-            if (RdoBlue2.Checked == true)
-                RdoBlue2.ForeColor = Color.FromName("blue");
-            else
-                RdoBlue2.ForeColor = Color.FromName("black");
+            RdoBlue2.ForeColor = Color.FromName("blue");
         }
 
         private void RdoYellow2_CheckedChanged(object sender, EventArgs e)
         {
-            if (RdoYellow2.Checked == true)
-                RdoYellow2.ForeColor = Color.FromName("yellow");
-            else
-                RdoYellow2.ForeColor = Color.FromName("black");
+            RdoYellow2.ForeColor = Color.FromName("yellow");
         }
 
         private void RdoRed_CheckedChanged(object sender, EventArgs e)
